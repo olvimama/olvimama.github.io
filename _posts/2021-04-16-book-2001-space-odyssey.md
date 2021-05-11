@@ -8,6 +8,7 @@ tags:
   - review
   - SF
   - IT
+  - novel
 ---
 
 > * 저자: 아서 C. 클라크
