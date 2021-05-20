@@ -22,10 +22,10 @@ GitHub Pages로 이 공간을 만들면서 많은 검색을 했다. 장단점이
 
 # 왜 GitHub Pages 인가?
 
-그 이유에 대해서는 이미 이 블로그의 [`첫 글`]({% link _posts/2021-03-07-hello-world.md %})에 언급한 바 있다. 하지만 해당 글에는 다른 이야기도 섞여있고, 그 글에서 다루지 못한 내용도 있어 다시 정리해보면 다음과 같다:
+그 이유에 대해서는 이미 이 블로그의 [`첫 글`]({% post_url 2021-03-07-hello-world %})에 언급한 바 있다. 하지만 해당 글에는 다른 이야기도 섞여있고, 그 글에서 다루지 못한 내용도 있어 다시 정리해보면 다음과 같다:
 
 - 댓글 기능을 별도로 추가해야 한다.
-- (댓글, SNS 공유 등 독자 반응에 대한) 푸시가 오지 않는다.
+- <span class="comment">(댓글, SNS 공유 등 독자 반응에 대한)</span> 푸시가 오지 않는다.
 - markdown, html 등으로 써야 한다.
 - git 커밋 작업이 필요하다.
 - 자체적으로 통계 기능을 제공하지 않아 별도로 구축해야 한다.
@@ -34,7 +34,7 @@ GitHub Pages로 이 공간을 만들면서 많은 검색을 했다. 장단점이
 위 특징은 주로 GitHub Pages 단점을 검색할 때 나오는 말이다. 그러나 나는 저런 허들(?)이 맘에 들어서 선택하게 됐다. 즉 나에게 저 특징들은 GitHub Pages가 갖고 있는 장점이었던 것이다. 결론적으로:
 
 내가 손수 이런 저런 경험을 해보고 싶다면 GitHub Pages 만한 것이 없다.
-{: .notice--accent}
+{: .notice}
 
 # GitHub Pages 시작하기
 
@@ -46,12 +46,12 @@ GitHub Pages로 이 공간을 만들면서 많은 검색을 했다. 장단점이
 
 # Jekyll 설치하기
 
-사실 markdown을 이용해서 블로그 글을 작성하려면 `Jekyll`(이하 `지킬`)이라는 것을 PC에 설치해야 한다. 지킬은 markdown을 웹 페이지로 생성해주는 역할을 한다고 생각하면 된다.
+사실 markdown을 이용해서 블로그 글을 작성하려면 `Jekyll`<span class="comment">(이하 **지킬**로 칭함)</span>이라는 것을 PC에 설치해야 한다. 지킬은 markdown을 웹 페이지로 생성해주는 역할을 한다고 생각하면 된다.
 
 `아니 깃헙에서 이미 멀쩡히 잘 돌아가고 있는데 이걸 왜 내 PC에 설치해야 해?` 라고 생각할 수 있고 나도 처음에는 그렇게 생각했다. 그럼 지킬을 설치해야 하는 이유는 무엇인가? 내가 생각하는 가장 큰 이유는 이것이다.
 
 작성한 글에 markdown 등의 오류가 있을 수 있다. 커밋 전 로컬에서 오류를 미리 확인하려면 내 PC에서 지킬이 돌아가야 한다.
-{: .notice--accent}
+{: .notice}
 
 지킬의 매뉴얼이 포함된 공식 사이트는 <a href="https://jekyllrb.com/" target="_blank">https://jekyllrb.com/</a> 이다. 영어 사이트이지만 다행히 한국어 사이트도 있다.
 
@@ -90,7 +90,7 @@ ERROR:  While executing gem ... (Gem::FilePermissionError)
     You don't have write permissions for the /Library/Ruby/Gems/2.x.x directory.
 ```
 
-해당 에러 메시지로 검색을 해보니 주로 코코아팟(CocoaPods) 에러 해결책이 나온다. 이런 류의 트러블슈팅을 몇 가지 시도해보았으나 되지 않았다.
+해당 에러 메시지로 검색을 해보니 주로 코코아팟<span class="comment">(CocoaPods)</span> 에러 해결책이 나온다. 이런 류의 트러블슈팅을 몇 가지 시도해보았으나 되지 않았다.
 
 결론적으로 성공한 방법은 `rbenv`를 통해 해결하는 것이었다. 이에 대해 간략히 설명하자면, 기본적으로 system ruby를 global ruby로 바라보고 있는데, rbenv를 통해서 별도 버전의 ruby를 global로 설정하여 위 문제를 회피할 수 있게 하는 것이다. 도움을 받은 링크는 아래와 같다.
 
@@ -109,7 +109,7 @@ GitHub에서 몇 가지 테마를 적용해주긴 하지만 각자의 원하는 
 - <a href="http://themes.jekyllrc.org/" target="_blank">http://themes.jekyllrc.org/</a>
 - <a href="https://github.com/topics/jekyll-theme" target="_blank">https://github.com/topics/jekyll-theme</a>
 
-이 중에 내가 고르고 적용한 테마는 `So Simple` 이라는 테마이며, 해당 테마의 git repository(이하 `저장소`)는 <a href="https://github.com/mmistakes/so-simple-theme" target="_blank">https://github.com/mmistakes/so-simple-theme</a> 이다.
+이 중에 내가 고르고 적용한 테마는 `So Simple` 이라는 테마이며, 해당 테마의 git repository<span class="comment">(이하 **저장소**로 칭함)</span>는 <a href="https://github.com/mmistakes/so-simple-theme" target="_blank">https://github.com/mmistakes/so-simple-theme</a> 이다.
 
 ## 테마 적용하기
 
@@ -130,8 +130,8 @@ So Simple 테마의 저장소를 보면 설치하고 세팅하는 방법에 대�
 
 하지만 문제가 있었으니... 위 단계의 4번에서 보다시피 테마를 리모트로 적용하는 것이다보니 내 저장소에 있는 파일은 `Gemfile`, `_config.yml` 정도 밖에 없었다. 즉, 테마에 해당하는 파일들은 없다보니 내 입맛대로 커스텀하기 어렵겠다 생각이 들었다.
 
-결론적으로 So Simple 테마의 저장소를 fork 했고, fork한 경우 지워야할 파일들(해당 테마의 도움말을 참고했다)을 정리한 후 현재의 블로그 테마를 유지하고 있다.
-{: .notice--accent}
+결론적으로 So Simple 테마의 저장소를 fork 했고, fork한 경우 지워야할 파일들<span class="comment">(해당 테마의 도움말을 참고했다)</span>을 정리한 후 현재의 블로그 테마를 유지하고 있다.
+{: .notice}
 
 내 GitHub Pages 저장소를 로컬 환경에 clone하고, Gemfile에 아래와 같은 내용으로 기입했다. 이는 So Simple 테마에 해당하므로 다른 테마를 이용중이라면 해당 테마의 매뉴얼을 살펴보고 적절한 내용으로 바꾸어줘야 한다.
 
@@ -139,7 +139,7 @@ So Simple 테마의 저장소를 보면 설치하고 세팅하는 방법에 대�
 gem "jekyll-theme-so-simple"
 ```
 
-터미널에서 `$ bundle install` 실행하여 (잘 안되면 당연히 앞에 sudo를 붙인다.) gem을 설치한다. 성공했다면 로컬에서 테스트할 준비가 완료된다.
+터미널에서 `$ bundle install` 실행하여 <span class="comment">(잘 안되면 당연히 앞에 sudo를 붙인다.)</span> gem을 설치한다. 성공했다면 로컬에서 테스트할 준비가 완료된다.
 
 # 로컬 환경에서 테스트
 
@@ -166,8 +166,8 @@ Configuration file: /Users/olvikim/Documents/GitHub/olvimama.github.io/_config.y
 위 메시지를 보면 지킬에서 사이트를 생성할 때 어떻게 돌아가는지 알 수 있는 점이 있다.
 
 1. **설정에 관한 내용은 `_config.yml` 파일을 바라본다.**
-2. **사이트를 생성하는 소스(Source)는 저장소의 클론이 있는 디렉토리이다.**<br>이 예제에서는 `/Users/olvikim/Documents/GitHub/olvimama.github.io`가 그것이다.
-3. **로컬에서 가상으로 생성한 사이트 결과물은 저장소의 클론이 있는 디렉토리 하위에 `_site` 라는 디렉토리에 있다.**<br>이 예제에서는 `/Users/olvikim/Documents/GitHub/olvimama.github.io/_site`가 그것이다. 해당 디렉토리에 가서 어떻게 이뤄졌는지 여기저기 살펴보면 블로그 내의 문서 파일들은 md 파일이 아닌 html 파일로 생성된 걸 알 수 있다.
+2. **사이트를 생성하는 소스<span class="comment">(Source)</span>는 저장소의 클론이 있는 디렉토리이다.**<br>위 메시지에선 `/Users/olvikim/Documents/GitHub/olvimama.github.io`이다.
+3. **로컬에서 가상으로 생성한 사이트 결과물은 저장소의 클론이 있는 디렉토리 하위에 `_site` 라는 디렉토리에 있다.**<br>위 메시지에선 `/Users/olvikim/Documents/GitHub/olvimama.github.io/_site`이다. 해당 디렉토리에 가서 어떻게 이뤄졌는지 여기저기 살펴보면 블로그 내의 문서 파일들은 md 파일이 아닌 html 파일로 생성된 걸 알 수 있다.
 
 ## 브라우저에서 http://localhost:4000
 
@@ -175,9 +175,9 @@ Configuration file: /Users/olvikim/Documents/GitHub/olvimama.github.io/_config.y
 
 - `http://127.0.0.1:4000` 혹은 `http://localhost:4000` 으로 브라우저를 통해 들어간다.
 - 만약 내가 만든 마크다운 파일에 문제가 있다면 터미널을 통해 에러 메시지가 출력된다.
-- 또한 더 이상 작업할 내용이 없어 로컬 서버를 중지하려면 `ctrl-c`를 눌러 종료하면 된다.
+- 또한 더 이상 작업할 내용이 없어 로컬 서버를 중지하려면 `ctrl-c`를 눌러 종료한다.
 
 # GitHub Pages 관련글
 
-- [[GitHub Pages] So Simple 테마를 통해 구조 살피기]({% link _posts/2021-04-18-gitpages-about-so-simple-theme.md %})
+- [[GitHub Pages] So Simple 테마를 통해 구조 살피기]({% post_url 2021-04-18-gitpages-about-so-simple-theme %})
 - 그 외 추가 등록 예정 :)

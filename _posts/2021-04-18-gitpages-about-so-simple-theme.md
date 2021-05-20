@@ -11,7 +11,7 @@ tags:
 last_modified_at: 2021-04-19 09:52:00 +0900
 ---
 
-GitHub Pages 삽질기 두 번째 글이다. 이번 글에서는 `Jekyll`(이하 `지킬`) 기반 사이트의 구조와 기본적인 설정을 하는 방법을 기술하고자 한다.
+GitHub Pages 삽질기 두 번째 글이다. 이번 글에서는 `Jekyll`<span class="comment">(이하 **지킬**로 칭함)</span> 기반 사이트의 구조와 기본적인 설정을 하는 방법을 기술하고자 한다.
 
 본 글은 제가 2021년 4월 현재 사용하고 있는 So Simple 테마를 예시로 사용합니다.<br>
 <a href="https://github.com/mmistakes/so-simple-theme" target="_blank">[링크] So Simple Jekyll Theme</a>
@@ -62,7 +62,7 @@ So Simple 테마는 아래와 같은 디렉토리 및 파일로 구성되어 있
 
 - 출처: <a href="https://github.com/mmistakes/so-simple-theme/blob/master/README.md#structure" target="_blank">[링크] So Simple 가이드 문서 중 Structure 항목</a>
 
-가이드 문서에 있는 내용에 따르면 `_data`, `_includes`, `_layouts` 및 `_sass`의 디렉토리와 파일들은 기본 위치(default location)에 위치한다고 한다. 지킬 공식 사이트에 있는 <a href="https://jekyllrb-ko.github.io/docs/structure/" target="_blank">`디렉토리 구조`</a> 내용과 비교해보면 실제로 그러하다는 걸 알 수 있다. 각 디렉토리에 대한 설명도 그곳에서 찾을 수 있으니 여기서는 내가 이 테마를 뜯어보다가 깨달은 내용으로 적어본다.
+가이드 문서에 있는 내용에 따르면 `_data`, `_includes`, `_layouts` 및 `_sass`의 디렉토리와 파일들은 기본 위치<span class="comment">(default location)</span>에 위치한다고 한다. 지킬 공식 사이트에 있는 <a href="https://jekyllrb-ko.github.io/docs/structure/" target="_blank">`디렉토리 구조`</a> 내용과 비교해보면 실제로 그러하다는 걸 알 수 있다. 각 디렉토리에 대한 설명도 그곳에서 찾을 수 있으니 여기서는 내가 이 테마를 뜯어보다가 깨달은 내용으로 적어본다.
 
 - `_layouts`: 말 그대로 큰 뼈대이다.
 - `_includes`: _layouts 디렉토리에 있는 파일들은 _includes 디렉토리에 있는 파일들로 구성되어 있다.
@@ -98,7 +98,7 @@ So Simple 가이드 문서에도 적혀있듯이, 최소 4개의 파일을 수�
 
 ### _data/navigation.yml
 
-GNB(Global Navigation Bar) 설정 파일이라고 볼 수 있다.  
+GNB<span class="comment">(Global Navigation Bar)</span> 설정 파일이라고 볼 수 있다.  
 내 경우는 다음의 절차에 따라 수정했다.
 
 1. So Simple 데모 사이트의 navigation 파일을 그대로 복사
@@ -114,7 +114,7 @@ GNB(Global Navigation Bar) 설정 파일이라고 볼 수 있다.
 *두 링크의 내용을 비교해보면 `title` 및 `url` 값이 다르다. 이에 대해서는 아래 [404 error](#404-error)에서 설명한다.*
 {: .notice--accent}
 
-사이트 내부에 생성할 메뉴는 루트(root) 디렉토리에 해당 md 파일도 만들어줘야 한다. 본 사이트의 경우는 다음의 md 파일이 존재한다.
+사이트 내부에 생성할 메뉴는 루트<span class="comment">(root)</span> 디렉토리에 해당 md 파일도 만들어줘야 한다. 본 사이트의 경우는 다음의 md 파일이 존재한다.
 
 - `categories.md` : GNB의 CATEGORY 메뉴에 해당
 - `posts.md` : GNB의 POST 메뉴에 해당
@@ -123,7 +123,7 @@ GNB(Global Navigation Bar) 설정 파일이라고 볼 수 있다.
 
 ### _data/text.yml
 
-각 언어에 따른 문자열(string)을 설정하는 파일이다. 테마 내에서 나오는 단어를 변수화하고, 각 변수를 영어, 독일어, 스페인어 등등 언어에 따른 정의를 한다. 그래서 `_config.yml` 파일에 있는 `locale` 설정에 따라 그에 맞는 단어가 보인다고 생각하면 된다.
+각 언어에 따른 문자열<span class="comment">(string)</span>을 설정하는 파일이다. 테마 내에서 나오는 단어를 변수화하고, 각 변수를 영어, 독일어, 스페인어 등등 언어에 따른 정의를 한다. 그래서 `_config.yml` 파일에 있는 `locale` 설정에 따라 그에 맞는 단어가 보인다고 생각하면 된다.
 
 꼭 언어별 설정을 하지 않더라도 코드 내에는 최대한 문자열을 바로 넣지 않고 이 파일 내에서 변수화하는 편이 좋다. 그 이유는 훗날 테마 커스터마이징을 다루는 글에서 소개하도록 하겠다.
 
@@ -140,7 +140,7 @@ ko-KR:
 ### index.md
 
 홈 화면, 즉 가장 처음에 보이는 화면에 대해 정의하는 파일이다.  
-내 경우는 페이지 나누기(pagination) 이슈 때문에 `md` 파일이 아닌 `html` 파일로 구성했다.
+내 경우는 페이지 나누기<span class="comment">(pagination)</span> 이슈 때문에 `md` 파일이 아닌 `html` 파일로 구성했다.
 
 - <a href="https://github.com/mmistakes/so-simple-theme/blob/master/index.md" target="_blank">[링크] So Simple 테마의 기본 index.md</a>
 - <a href="https://github.com/mmistakes/so-simple-theme/blob/master/example/index.html" target="_blank">[링크] So Simple 데모 사이트의 index.html</a>
@@ -213,7 +213,7 @@ layout: tags
 permalink: /tag/
 ```
 
-요약하면 다음 항목의 값(경로)를 동일하게 해야 한다.
+요약하면 다음 항목의 값<span class="comment">(경로)</span>를 동일하게 해야 한다.
 
 1. 카테고리
    - **category_archive_path** (_config.yml)
@@ -302,5 +302,5 @@ permalink: /blog/:title
 
 # GitHub Pages 관련글
 
-- [[GitHub Pages] Mac 환경에서 첫 걸음 내딛기]({% link _posts/2021-04-06-gitpages-the-1st-step.md %})
+- [[GitHub Pages] Mac 환경에서 첫 걸음 내딛기]({% post_url 2021-04-06-gitpages-the-1st-step %})
 - 그 외 추가 등록 예정 :)
