@@ -1,5 +1,4 @@
 GEM
-  remote: https://rubygems.org/
   specs:
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
@@ -99,4 +98,4 @@ DEPENDENCIES
   jekyll-theme-so-simple
 
 BUNDLED WITH
-   2.2.6
+   2.2.14
