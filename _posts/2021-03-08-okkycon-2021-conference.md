@@ -4,10 +4,10 @@ excerpt_separator: "<!--more-->"
 categories:
   - Experience
 tags:
-  - conference
-  - review
   - OKKYCON
   - IT
+  - conference
+  - review
 ---
 
 > OKKYCON 2021은 회사 지원으로 참가했으며, 본 글은 사내 게시판에 공유한 글을 옮겼습니다.

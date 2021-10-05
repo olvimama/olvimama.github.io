@@ -5,6 +5,7 @@ categories:
   - Hello
 tags:
   - essay
+  - 편두통
 ---
 
 블로그에 너무 오랜만에 글을 쓰는지라 우선 근황 토크.

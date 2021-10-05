@@ -6,7 +6,7 @@ categories:
 tags:
   - book
   - review
-  - humanities
+  - 인문
 ---
 
 > * 저자: 유시민

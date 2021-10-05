@@ -8,7 +8,7 @@ tags:
   - google
   - oracle
   - java
-  - copyright
+  - 저작권
 ---
 
 > 본 글은 사내 게시판에 공유한 글에 약간의 살을 붙이고 다듬어 옮긴 것입니다.

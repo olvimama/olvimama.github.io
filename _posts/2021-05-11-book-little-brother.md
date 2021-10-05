@@ -6,7 +6,6 @@ categories:
 tags:
   - book
   - review
-  - novel
   - SF
   - IT
 ---
