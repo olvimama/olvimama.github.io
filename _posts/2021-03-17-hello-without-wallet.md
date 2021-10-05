@@ -2,7 +2,7 @@
 title: "지갑 없는 날의 퇴근길 - 현금 없음. 카드 없음."
 excerpt: "> 내가 노인이 되었을 때 이 상황에서 대처할 수 있을까?"
 categories:
-  - Hello
+  - IMO
 tags:
   - essay
   - fintech
